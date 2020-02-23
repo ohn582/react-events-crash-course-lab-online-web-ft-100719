@@ -24,9 +24,12 @@ export default class ChromeBoisDomain extends Component {
   /* if the key pressed was 's', then it should call `resize` with '-' 
    */
   
+  
   render() {
     return (
       <canvas 
+        onKeyPress={resize}
+        onKeyPress={a.key(resize)}
         onMouseMove={this.handleMouseMove}
         width='900'
         height='600'
